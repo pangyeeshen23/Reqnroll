@@ -27,16 +27,16 @@ Make sure you build your solution, otherwise the feature file editor might behav
 Once you have done this, you should see these files. 
 
 ```{code-block} csharp
-:caption: PriceCalculator.cs
+:caption: PriceCalculation.feature.cs
 namespace ReqnrollQuickstart.App;
 
-public class PriceCalculator
+public class PriceCalculation
 {
     // the item prices are hard coded for now
     private readonly Dictionary<string, decimal> _priceTable = new()
     {
-        { "Electric guitar", 180.0 },
-        { "Guitar pick", 1.5 }
+        { "Electric guitar", 180.0m },
+        { "Guitar pick", 1.5m }
     };
 
     public decimal CalculatePrice(Dictionary<string, int> basket)
